@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Laxmi Engg Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Sri Laxmi Engg Center</h1>
+        <nav>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="invoice-form">
+            <h2>Create Invoice</h2>
+            <form id="invoiceForm">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" required>
+
+                <label for="itemName">Item Name:</label>
+                <input type="text" id="itemName" required>
+
+                <label for="qty">Quantity:</label>
+                <input type="number" id="qty" required>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" required>
+
+                <label for="discount">Discount (%):</label>
+                <input type="number" id="discount" value="0">
+
+                <button type="submit">Generate Invoice</button>
+            </form>
+            <div id="invoiceDetails" style="display:none;">
+                <h3>Invoice Details</h3>
+                <p id="invoiceTotal"></p>
+                <button id="downloadExcel">Download Excel</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sri Laxmi Engg Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login-form">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="mobileNumber">Mobile Number:</label>
+                <input type="text" id="mobileNumber" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit">Login</button>
+                <p><a href="#">Forgot Password?</a></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Sri Laxmi Engg Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Register</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="register-form">
+            <h2>Create Account</h2>
+            <form id="registerForm">
+                <label for="mobileNumber">Mobile Number:</label>
+                <input type="text" id="mobileNumber" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
